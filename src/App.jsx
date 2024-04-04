@@ -9,7 +9,14 @@ function App() {
 
   return (
     <BrowserRouter>
+<<<<<<< HEAD
       <IndexPage/>
+=======
+    
+    <Routes>
+      <Route path="/" element={<SamplePage/>} />
+    </Routes>
+>>>>>>> main
       <div>Sample App</div>
     </BrowserRouter>
   )
