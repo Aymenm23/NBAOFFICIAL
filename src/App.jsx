@@ -9,14 +9,11 @@ function App() {
 
   return (
     <BrowserRouter>
-<<<<<<< HEAD
-      <IndexPage/>
-=======
-    
     <Routes>
-      <Route path="/" element={<SamplePage/>} />
+      <Route path="/" element={<IndexPage/>} />
+      <Route path="/questions" element={<SamplePage/>} />
+      <Route path="/chat" element={<SamplePage/>} />
     </Routes>
->>>>>>> main
       <div>Sample App</div>
     </BrowserRouter>
   )
