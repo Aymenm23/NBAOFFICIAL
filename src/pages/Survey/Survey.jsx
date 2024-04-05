@@ -1,11 +1,14 @@
 import React from "react";
 import "./Survey.scss";
 import Header from "../../components/Header/Header";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RadioField from "../../components/RadioField/RadioField";
+import { useNavigate, useParams } from "react-router-dom";
+
 
 const Survey = () => {
-  const [showQuestion8, setShowQuestion8] = useState(false);
+    const navigate = useNavigate();
+
 
   const questionsArray = [
     {
@@ -48,17 +51,19 @@ const Survey = () => {
     },
   ];
 
-  const handleQuestion8Change = (event) => {
-    const selectedAnswer = event.target.value;
-    setShowQuestion8(selectedAnswer === "Yes");
-  };
+  const onSubmit = async (event) => {
+   
+  navigate('/landingpage')
+
+  }
+
 
   return (
     <>
       <Header />
       <section className="survey">
         <div className="survey__top">
-          <h1 className="survey__header">Profile Feature</h1>
+          <h1 className="survey__header">D.U.N.K</h1>
           <p className="survey__description">
             Get quality, curated NBA content. Whether you are new
             to the sport or a dedicated fan, you deserve quality NBA fit.
@@ -67,7 +72,7 @@ const Survey = () => {
             Answer a few questions to help us get your home page ready.
           </p>
         </div>
-        <form className="survey__form">
+        <form className="survey__form" noValidate onSubmit={onSubmit}>
           <div>
             {questionsArray.map(({ question, answers, questionId, image }) => (
               <div className="survey__question-container" key={questionId}>
@@ -82,7 +87,7 @@ const Survey = () => {
                         key={index}
                         label={answer}
                         id={questionId}
-                        name={questionId}
+                        name={answer}
                       />
                     ))}
                   </div>
