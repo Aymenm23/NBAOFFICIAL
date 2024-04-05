@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './IndexComponent.scss'
 import closeIcon from "../../assets/eXit.svg"
+import nbaLogo from "../../assets/nbaLogo.png"
 
 const IndexComponent = () => {
   return (
@@ -12,18 +13,20 @@ const IndexComponent = () => {
           <img src={closeIcon} className='xIcon'/>
         </Link>
       </div>
+        <div className='popUpCard__nbaLogo'> 
+          <img src={nbaLogo} className='nbaLogo'/>
+        </div>
       <div className='popUpCard__content'>
         <div className='content'>
         <div className='content__text'>
-          <h1 className='indexTitle'>Are you ready for the experience of a lifetime?</h1>
+          <h2 className='indexTitle'>YOUR FANDOM. {<br/>} YOUR EXPERIENCE.</h2>
+          <h3 className='indexSubtext'>Tailor your NBA content using our Profile Feature</h3>
         </div>
-        <div className='content__button'>
-          <Link to="/questions">
+          <Link to="/questions" className='content__button'>
             <div className='indexButton'>
-              <p>Proceed</p>
+              <p>Get Started</p>
             </div>
           </Link>
-        </div>
 
         </div>
       </div>
