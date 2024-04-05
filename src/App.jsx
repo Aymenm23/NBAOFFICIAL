@@ -5,7 +5,6 @@ import SamplePage from "./pages/SamplePage/SamplePage";
 import IndexPage from "./pages/IndexPage/index";
 import ErrorPage from "./pages/ErrorPage/error";
 import LandingPage from "./pages/LandingPage/LandingPage";
-// import ChatPage from "./pages/ChatPage/ChatPage";
 
 function App() {
    return (
@@ -13,7 +12,6 @@ function App() {
          <Routes>
             <Route path="/" element={<IndexPage />} />
             <Route path="/questions" element={<SamplePage />} />
-            {/* <Route path="/chat" element={<SamplePage />} /> */}
             <Route path="/landing" element={<LandingPage />} />
             <Route path="*" element={<ErrorPage />} />
          </Routes>

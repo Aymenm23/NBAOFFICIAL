@@ -6,6 +6,7 @@
     flex-direction: column;
     padding: 40px;
     &__title{
+
         color: black;
         font-size: .9rem;
         .titleHeader{
@@ -30,6 +31,9 @@
         display: flex;
     }
     &__focusArticle{
+        &:hover{
+            background-color: rgba(0,0,0,.1);
+        }
         width: 60%;
         .mainImage{
             width: 720px;
@@ -43,6 +47,9 @@
         display: flex;
         flex-direction: column;
         .subArticle{
+            &:hover{
+                background-color: rgba(0,0,0,.1);
+            }
             display: flex;
             .subImage{
                 aspect-ratio: 16 / 9 auto;
@@ -65,5 +72,27 @@
     }
     .date{
         color: #8E9196;
+    }
+    .slidingDeck{
+        display: flex;
+        animation: slide 30s linear infinite;
+        .slide{
+            &:hover{
+                background-color: #FFFFF1;
+            }
+            margin: 0 50px;
+            flex: 0 0 auto;
+            border-top: #E5E7EB;
+            width: 160px;
+            height: 90px;
+        }
+        @keyframes slide {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+          }
     }
 }
