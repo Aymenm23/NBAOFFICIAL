@@ -19,8 +19,8 @@ const LandingPageComponent = () => {
    console.log();
    if (url.includes("expert")) {
       mainPhoto = Brunson;
-      etsy = Bagley;
-      food = AD;
+      etsy = AD;
+      food = Bagley;
       green = RUI;
    }
    return (
