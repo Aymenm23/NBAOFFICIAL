@@ -1,0 +1,11 @@
+.errorPage{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &__gif{
+        padding-left: 35%;
+        width: 30%;
+    }
+}

@@ -1,0 +1,37 @@
+.landingMain{
+    background-color: white;
+    width: 1280px;
+    display: flex;
+    padding: 40px;
+    &__focusArticle{
+        width: 60%;
+        .mainImage{
+            width: 720px;
+            border-radius: 5px;
+        }
+        .mainText{
+            color:black;
+        }
+    }
+    &__subArticles{
+        display: flex;
+        flex-direction: column;
+        .subArticle{
+            display: flex;
+            margin:  0 0 16px 24px;
+            .subImage{
+                border-radius: 5px;
+                width: 33%;
+            }
+            .subText{
+                margin-top: 5px;
+                color:black;
+            }
+            .textStack{
+                margin-left: 5px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

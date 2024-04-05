@@ -1,0 +1,25 @@
+.slidingDeck{
+    display: flex;
+    animation: slide 30s linear infinite;
+    .slide{
+        &:hover{
+            background-color: #FFFFF1;
+        }
+        margin: 0 50px;
+        flex: 0 0 auto;
+        border-top: #E5E7EB;
+        width: 160px;
+        height: 90px;
+    }
+    @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      .date{
+        color: #8E9196;
+    }
+}
