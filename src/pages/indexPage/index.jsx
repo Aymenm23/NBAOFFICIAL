@@ -1,12 +1,11 @@
 import "./index.scss"
-import IndexComponent from "../../components/indexComponents/IndexComponent";
+import IndexComponent from "../../components/IndexComponents/IndexComponent";
 
 
 const IndexPage = () => {
   return (
-    <main>
+    <main className="indexPage">
       <IndexComponent/>
-      <p>Index Page</p>
     </main>
   );
 };
