@@ -3,6 +3,10 @@ import Etsy from "../../assets/EtsyHeadline.png";
 import MainPhoto from "../../assets/MainPhoto.png";
 import Green from "../../assets/NBAGreenHeadline.png";
 import Food from "../../assets/FoodHeadline.png";
+import AD from "../../assets/AD.jpg.png";
+import Bagley from "../../assets/BAGLEY.jpg.png";
+import Brunson from "../../assets/BRUNSON.png";
+import RUI from "../../assets/RUI.jpg.png";
 
 const LandingPageComponent = () => {
    let url = window.location.href;
@@ -14,10 +18,10 @@ const LandingPageComponent = () => {
    let green = Green;
    console.log();
    if (url.includes("expert")) {
-      mainPhoto = Etsy;
-      etsy = Etsy;
-      food = Etsy;
-      green = Etsy;
+      mainPhoto = Brunson;
+      etsy = Bagley;
+      food = AD;
+      green = RUI;
    }
    return (
       <section className="landingMain">
