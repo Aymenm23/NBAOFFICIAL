@@ -3,7 +3,7 @@ import "./Survey.scss";
 import Header from "../../components/Header/Header";
 import { useState, useEffect } from "react";
 import RadioField from "../../components/RadioField/RadioField";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 
 
 const Survey = () => {
@@ -52,8 +52,7 @@ const Survey = () => {
   ];
 
   const onSubmit = async (event) => {
-   
-  navigate('/landingpage')
+
 
   }
 
@@ -99,7 +98,7 @@ const Survey = () => {
             ))}
           </div>
           <div className="survey__button-container">
-            <button className="survey__button">Submit</button>
+            <Link to="/landing" className="survey__button">Submit</Link>
           </div>
         </form>
       </section>

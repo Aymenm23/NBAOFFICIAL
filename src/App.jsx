@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import SamplePage from "./pages/SamplePage/SamplePage";
 
-import IndexPage from "./pages/IndexPage/index";
-import ErrorPage from "./pages/ErrorPage/error";
+import IndexPage from "./pages/indexPage/index";
+import ErrorPage from "./pages/errorPage/error";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Survey from './pages/Survey/Survey';
 

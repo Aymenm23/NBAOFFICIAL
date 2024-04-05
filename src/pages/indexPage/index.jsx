@@ -1,5 +1,5 @@
 import "./index.scss"
-import IndexComponent from "../../components/IndexComponents/IndexComponent";
+import IndexComponent from "../../components/indexComponents/IndexComponent";
 
 
 const IndexPage = () => {
