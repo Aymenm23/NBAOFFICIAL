@@ -1,0 +1,12 @@
+.radio {
+    margin-right: 8px;
+
+    &__container {
+        display: flex;
+        margin-bottom: 8px;
+    }
+
+    &__label {
+        color: black;
+    }
+}
