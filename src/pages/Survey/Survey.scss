@@ -1,0 +1,72 @@
+.survey {
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        margin: 24px 36px;
+    }
+
+    &__header {
+    }
+
+    &__description {
+        margin: 16px 0;
+    }
+
+    &__form {
+        margin: 24px 200px; 
+    }
+
+    &__question-container {
+        box-shadow: 0px 0px 5px lightgrey;
+        margin-bottom: 16px;
+        padding: 16px;
+        display: flex;
+    }
+
+    &__answers-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    &__question {
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    &__answers {
+    }
+
+    &__right-container {
+        padding-right: 36px;
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__left-container {
+        width: 50%;
+        padding: 36px 0 36px 60px;
+    }
+
+    &__button {
+        background-color: #C8102E;
+        color: white;
+        border: none;
+        padding: 8px 36px;
+    }
+
+    &__button-container {
+        display: flex;
+        justify-content: center;
+        margin: 36px;
+    }
+
+    &__image {
+        height: auto;
+    }
+
+}
