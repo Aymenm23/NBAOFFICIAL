@@ -1,0 +1,74 @@
+.popUpCard{
+    width: 710px;
+    &__greyBackground{
+        background-color: rgba(0,0,0,.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+    }
+    // ! This is the Close icon
+    &__x{
+        padding-top: 10px;
+        position: absolute;
+        width: 710px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .xIcon{
+            height: 44px;
+            width: 77px;
+        }
+
+    }
+    &__content{
+        background-color: #222;
+        border-radius: 15px;
+        .content{
+            &__text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .indexTitle{
+                    text-align: center;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__button{
+                width: 150px;
+                background-color: black;
+                border-radius: 50px;
+                padding: 0px 20px;
+                margin: 15px 20px;
+                margin-top: 0;
+                .indexButton{
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.nbaBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    // background-image: url(../../assets/nbaBackground.svg);
+    // background-size: 100%; 
+    background-image: url(../../assets/nbaBackgroundAlt.svg);
+    background-size: 130%;
+    background-position:top;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
