@@ -1,1 +1,2 @@
-# LeBrain-JameStation__Frontend
+# Frontend Application for NBA Hackathon
+
